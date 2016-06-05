@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Jacman 主题使用方法
+title: 如何使用 Jacman 主题
 tags:
 - Jekyll
 - Jacman
