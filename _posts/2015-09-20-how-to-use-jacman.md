@@ -15,7 +15,7 @@ Jekyll-Jacman 是为 [Jekyll](http://jekyllrb.com) 设计的一款清新且具�
 
 Jacman 主题提供了丰富的配置属性，可以实现您对主题的自定义。配置文件`_config.yml`位于主题根目录下。本次更新对配置文件进行了较大调整，如您之前就使用了 Jacman，也需要您根据以下指南进行相应的修改。
 
-```
+
 ##### 菜单
 menu:
   主页: /
@@ -115,17 +115,17 @@ baidu_search:
 tinysou_search:     ## http://tinysou.com/
   enable: false
   id: "4ac092ad8d749fdc6293" 
-```
+
 
 ###属性功能
 - **菜单 menu**
 默认没有启用 `/tags` 和 `/categories`页面，如果需要启用请在博客目录下的`source`文件夹中分别建立`tags` 和 `categories`文件夹每个文件夹中分别包含一个`index.md`文件。内容为：
 
-```
+---
 layout: tags (或categories)
 title: tags (或categories)
 ---
-```
+
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为主题中已经内置了这两个页面的模板，所以他们会被正确的解析出来。
@@ -184,11 +184,11 @@ title: tags (或categories)
 `baidu_search`：如果开启百度站内搜索需要登录 [百度站内搜索](http://zn.baidu.com/)，配置好你的站点，并开启站内搜索获取搜索ID，另外`site`属性可以填默认值，也可以填自己做了CNAME的二级域名，更详细的可以阅读[这篇博客](http://gengbiao.me/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%99%BE%E5%BA%A6%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/)了解。
 
  `google_cse`：如果开启谷歌自定义搜索需要先登录 [Google CSE](https://www.google.com/cse/)，配置好你的站点，并获得此自定义搜索的ID。此外你需要在博客目录下的`source`文件夹中建立`search`文件夹并包含一个`index.md`文件。内容为：
- ```
+ ---
  layout: search
  title: search
  ---
- ```
+
 
  `tiny_search`: 如果要开启[微搜索](http://tinysou.com/)，需要先注册一个帐号，配置一个Engine，将Engine的Key填入配置文件中的`id`即可。
 
@@ -199,7 +199,7 @@ title: tags (或categories)
 
 - **Q：如何建立一篇图片类文章（Gallery Post）？**
 > 直接新建一个 Markdown 文件，将其`front-matter`修改为如下，即可看到主题为图片类文章提供的样式。
-```
+
 ---
 layout: photo
 title: Gallery Post
@@ -207,7 +207,7 @@ photos:
 - http://i.minus.com/ibobbTlfxZgITW.jpg
 - http://i.minus.com/iedpg90Y0exFS.jpg
 ---
-```
+
 
 - **Q：我在配置文件中给某一项设置了值，但为什么总是看不到效果啊？**
 >`_config.yml`文件中的每个属性值前面必须留一个空格，建议在 Sublime/Notepad++ 中开启显示所有空格模式。另每篇文章的 `front-matter` 也要注意这个问题。
