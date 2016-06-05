@@ -5,6 +5,7 @@ tags:
 - Photo
 - Dream
 categories: Photo
+description:一些肯定上不了的大学
 photos:
 - http://imagemg.cnpp.cn/upload/images/20141204/1417663320_104896_2.jpg
 - http://i2.hexunimg.cn/2014-11-17/170483500.jpg
